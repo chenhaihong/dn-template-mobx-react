@@ -1,0 +1,43 @@
+# dawn中间件配置文件
+# 文档地址：https://alibaba.github.io/dawn/docs/#!/zh/middleware/webpack
+
+init:
+  - name: pkginfo
+
+dev:
+  - name: clean
+  - name: copy
+    files:
+      ./build/(0).ico: ./src/assets/favicon.ico
+      ./build/libs/(0).js: ./src/libs/*.js
+  - name: faked
+    port: 6002
+    autoOpen: false
+  - name: webpack
+    watch: true
+    entry: ./src/*.js # 将 src 下所有 .js 文件作为入口（不包括子目录中的 js）
+  - name: server
+  - name: browser-sync
+
+build:
+  - name: clean
+  - name: copy
+    files:
+      ./build/(0).ico: ./src/assets/favicon.ico
+      ./build/libs/(0).js: ./src/libs/*.js
+  - name: webpack
+    entry: ./src/*.js # 将 src 下所有 .js 文件作为入口（不包括子目录中的 js）
+
+add:
+  - name: react-component-creator
+
+test:
+  - name: lint
+  - name: unit
+
+publish:
+  - name: shell
+    script:
+      - dn test
+      - dn build
+      - npm pu
