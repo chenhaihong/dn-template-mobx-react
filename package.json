@@ -7,6 +7,10 @@
     "test": "dn test && dn build -e prod"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenhaihong/dn-template-mobx-react"
+  },
   "devDependencies": {},
   "dependencies": {
     "antd": "^3.5.2",
