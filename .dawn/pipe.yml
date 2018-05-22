@@ -11,7 +11,7 @@ dev:
       ./build/(0).ico: ./src/assets/favicon.ico
       ./build/libs/(0).js: ./src/libs/*.js
   - name: faked
-    port: 6002
+    # port: 6002
     autoOpen: false
   - name: webpack
     watch: true

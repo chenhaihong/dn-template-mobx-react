@@ -1,4 +1,4 @@
-# zop
+# dn-template-mobx-react
 
 ## 一、目录结构
 
@@ -26,21 +26,21 @@
 │
 ```
 
-## 二、运行项目
+## 二、下载模板
 
 ```
 $ npm install -g dawn
-$ npm install
-$ dn dev # 首次执行会安装dawn配置文件中使用到的中间件，过程会比较久
+$ mkdir demo && cd demo
+$ dn init -t mobx-react
 ```
 
-## 三、生产版本
+## 三、运行
 
 ```
-dn build # 用到了 webpack 中间件，https://alibaba.github.io/dawn/docs/#!/zh/middleware/webpack
+$ dn dev
 ```
 
-## 三、相关技术文档
+## 四、相关技术文档
  - [dawn](https://alibaba.github.io/dawn/)
  - [react](https://doc.react-china.org)
  - [mobx](https://cn.mobx.js.org)

@@ -1,7 +1,7 @@
 {
   "name": "dn-template-mobx-react",
-  "version": "1.0.0",
-  "description": "dn-template-mobx-react",
+  "version": "1.0.1",
+  "description": "基于dawn+react+mobx的项目模板文件",
   "main": "./src/index.js",
   "scripts": {
     "test": "dn test && dn build -e prod"
@@ -16,6 +16,11 @@
     "email": "erye@tiiit.cn",
     "url": "https://www.tiiit.cn"
   },
+  "keywords": [
+    "dawn",
+    "react",
+    "mobx"
+  ],
   "devDependencies": {},
   "dependencies": {
     "antd": "^3.5.2",
