@@ -22,7 +22,7 @@
 │   ├── helpers            # 辅助函数
 │   └── libs               # 第三方函数库
 │ 
-├── src_chunlan            # 春兰写的静态文件，放到了这个目录
+├── webpack.config.js      # 自定义 webpack 配置，配置文档：https://alibaba.github.io/dawn/docs/#!/zh/middleware/webpack
 │
 ```
 

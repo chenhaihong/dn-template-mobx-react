@@ -33,6 +33,7 @@ add:
 
 test:
   - name: lint
+    ignore: ['src/libs/*.js'] # 不检查 libs 目录的文件
   - name: unit
 
 publish:

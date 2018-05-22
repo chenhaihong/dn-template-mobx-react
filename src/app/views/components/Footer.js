@@ -1,9 +1,9 @@
 import './style/Footer';
 
 import React, { Component } from 'react';
-import { observer } from "mobx-react";
+import { observer } from 'mobx-react';
 
-import HomeController from "@controllers/HomeController";
+import HomeController from '@controllers/HomeController';
 
 @observer
 class Footer extends Component {

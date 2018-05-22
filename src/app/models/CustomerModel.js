@@ -23,4 +23,4 @@ export default class Customer {
   hello() {
     alert(`Hello, my name is ${this.name}`);
   }
-};
+}

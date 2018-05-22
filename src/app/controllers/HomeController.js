@@ -1,4 +1,4 @@
-import { toJS, observable, computed } from 'mobx';
+import { observable, computed } from 'mobx';
 
 import HomeService from '@services/HomeService';
 
@@ -9,6 +9,10 @@ export default new class HomeController {
   @observable footer = '这是footer';
 
   @observable customers = [];
+
+  @computed get pure_customers() {
+    return [];
+  }
 
   constructor() {
     this.getCustomers();
