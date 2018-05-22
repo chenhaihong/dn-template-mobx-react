@@ -1,6 +1,28 @@
 # dn-template-mobx-react
 
-## 一、目录结构
+这是一个应用了 [Dawn 脚手架](https://alibaba.github.io/dawn/) 的 React & MobX 项目模板。
+
+默认需要安装 react/react-dom/mobx/mobx-react/antd。
+
+## 一、初始化项目
+
+```
+$ mkdir demo && cd demo
+$ dn init -t mobx-react
+```
+
+## 二、开发
+
+```
+$ dn dev
+```
+
+## 三、构建
+```
+$ dn build
+```
+
+## 四、目录结构
 
 ```
 ├── .dawn                  # dawn 工具的配置文件目录
@@ -26,21 +48,7 @@
 │
 ```
 
-## 二、下载模板
-
-```
-$ npm install -g dawn
-$ mkdir demo && cd demo
-$ dn init -t mobx-react
-```
-
-## 三、运行
-
-```
-$ dn dev
-```
-
-## 四、相关技术文档
+## 五、相关技术文档
  - [dawn](https://alibaba.github.io/dawn/)
  - [react](https://doc.react-china.org)
  - [mobx](https://cn.mobx.js.org)
